@@ -1,3 +1,4 @@
+import view
 textfile = open("file.txt", "w+")
 
 def data():
@@ -32,7 +33,17 @@ def find_contact(data):
 
 
 def change_phone_number(contact):
-   return None
+  with open("file.txt", "r+") as file:
+    value = file.read()
+    if contact in value:
+      new_contact = input('Введите изменения:')
+      value = value.replace( contact, new_contact)
+      with open("file.txt", "w") as file2:
+         file2.write(value)
+      view.success()
+    else:
+      view.not_success()
+
 
 def delete_contact(contact):
    return None
