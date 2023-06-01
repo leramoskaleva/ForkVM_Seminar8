@@ -33,6 +33,11 @@ def success(res):
 def not_success(res):
     return None
 
+def change_phone_number(contact):
+   return None
+
+def delete_contact(contact):
+   return None
 
 
 
