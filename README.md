@@ -9,5 +9,5 @@
 
 Разработчики:
 1. `main`, `controller` – Axil18
-2. `model` – Nikita
+2. `model` – Nikita, Tonia
 3. `view` – Loreleia, функция `menu` – Tonia
