@@ -16,7 +16,7 @@ def start():
             else:
                 view.not_success(res)
         elif answer == '3':
-            contact = input('Введите данные контакта для поиска: ')
+            contact = input('Меню: \n1. Искать по ФИО \n2. Искать по номеру телефона: ')
             res = model.find_contact(contact)
             view.show_contacts(res)
         elif answer == '4':

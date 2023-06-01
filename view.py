@@ -1,8 +1,5 @@
 def greetings():
-    print(
-        'Привет хозяин'
-    )
-    return greetings
+    print('Приветствую тебя, хозяин!')
 
 
 def menu():
@@ -15,31 +12,19 @@ def menu():
         '6 – Выход'
     )
 
-
-def error():
-    print(
-        'Error. Повторите ввод'
-    )
-
-
-def show_contacts(date: list):
-    return None
-
-
 def success(res):
-    return None
-
+    print('Успешно')
 
 def not_success(res):
-    return None
+    print('Не успешно')
 
-def change_phone_number(contact):
-   return None
+def show_contacts(data):
+    return data
+    
+def error():
+    print('Ошибка. Повторите ввод')
 
-def delete_contact(contact):
-   return None
-
-
+ 
 
 if __name__ == '__main__':
     menu()
