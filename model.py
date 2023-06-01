@@ -31,8 +31,33 @@ def find_contact(data):
           print(data[values])
 
 
+
 def change_phone_number(contact):
    return None
 
+
+
+
+
+
+
+
+
+
+
 def delete_contact(contact):
-   return None
+    with open("file.txt", "r+") as file:
+        values = file.read().splitlines()
+        flag = False
+        for cont in values:
+            if contact in cont:
+                flag = True
+                values.remove(cont)
+                with open("file.txt", "w") as new_file:
+                    for k in values:
+                        new_file.write(k)
+                        new_file.write('\n')
+                view.success()
+        if flag == False:
+                view.not_success()
+
